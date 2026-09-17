@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Shop</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Section 1: Top Bar -->
+    <header>
+        <div class="bg-gray-100 py-2">
+            <div class="container mx-auto px-6 sm:px-12 flex justify-between items-center text-xs text-gray-600">
+                <div class="flex items-center gap-2">
+                    <span>📍</span>
+                    <p>Store Location: Lincoln-344, Illinois, Chicago, USA</p>
+                </div>
+
+                <div class="flex items-center gap-4">
+                    <p>Eng</p>
+                    <p class="border-l border-gray-300 pl-4">USD</p>
+                    <div class="border-l border-gray-300 pl-4 flex items-center gap-2">
+                        <a href="#">Sign In</a>
+                        <span>/</span>
+                        <a href="#">Sign Up</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 2: Main Navbar -->
+        <div class="border-b border-gray-300 py-3">
+            <div class="container mx-auto px-6 sm:px-12 flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                    <span class="text-3xl">🌱</span>
+                    <h1 class="text-2xl font-semibold">Ecobazar</h1>
+                </div>
+
+                <ul class="hidden md:flex gap-12 text-sm font-medium">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+
+                <div class="flex items-center gap-3 text-2xl">
+                    <span>👤</span>
+                    <span>♡</span>
+                    <div class="relative">
+                        <span>🛍️</span>
+                        <span class="absolute -top-1 -right-1 w-4 h-4 rounded-full bg-[#00B207] text-white text-[10px] flex items-center justify-center">2</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Section 3: Hero + Category Sidebar -->
+        <section class="container mx-auto px-6 sm:px-12 py-8 flex flex-col lg:flex-row justify-between gap-6">
+            <div class="w-full lg:w-72 space-y-3">
+                <div class="flex items-center gap-2 shadow-md rounded-md py-3 px-6">
+                    <img src="https://images.unsplash.com/photo-1619546813926-a78fa6372cd2?auto=format&fit=crop&w=100&q=80" alt="Fresh Fruit" class="w-9 h-9 rounded-full object-cover">
+                    <p>Fresh Fruit</p>
+                </div>
+                <div class="flex items-center gap-2 shadow-md rounded-md py-3 px-6">
+                    <img src="https://images.unsplash.com/photo-1594282486552-05b4d80fbb9f?auto=format&fit=crop&w=100&q=80" alt="Vegetables" class="w-9 h-9 rounded-full object-cover">
+                    <p>Vegetables</p>
+                </div>
+                <div class="flex items-center gap-2 shadow-md rounded-md py-3 px-6">
+                    <img src="https://images.unsplash.com/photo-1622206151226-18ca2c9ab4a1?auto=format&fit=crop&w=100&q=80" alt="Fish and Meat" class="w-9 h-9 rounded-full object-cover">
+                    <p>Fish & Meat</p>
+                </div>
+                <div class="flex items-center gap-2 shadow-md rounded-md py-3 px-6">
+                    <img src="https://images.unsplash.com/photo-1528825871115-3581a5387919?auto=format&fit=crop&w=100&q=80" alt="Bakery Food" class="w-9 h-9 rounded-full object-cover">
+                    <p>Bakery Food</p>
+                </div>
+                <div class="flex items-center gap-2 shadow-md rounded-md py-3 px-6">
+                    <img src="https://images.unsplash.com/photo-1594282486552-05b4d80fbb9f?auto=format&fit=crop&w=100&q=80" alt="Soft Drinks" class="w-9 h-9 rounded-full object-cover">
+                    <p>Soft Drinks</p>
+                </div>
+                <div class="flex items-center gap-2 shadow-md rounded-md py-3 px-6">
+                    <img src="https://images.unsplash.com/photo-1543083477-4f785aeafaa9?auto=format&fit=crop&w=100&q=80" alt="Herbs and Oil" class="w-9 h-9 rounded-full object-cover">
+                    <p>Herbs & Oil</p>
+                </div>
+            </div>
+
+            <div class="relative overflow-hidden flex-1 rounded-md min-h-[420px]">
+                <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=1400&q=80" alt="Fresh Organic Food" class="w-full h-full object-cover absolute inset-0">
+                <div class="absolute top-10 left-10 text-white max-w-md">
+                    <p class="text-sm mb-2">Welcome to Ecobazar</p>
+                    <h2 class="text-4xl md:text-5xl font-bold mb-4">Fresh Food for Health</h2>
+                    <p class="text-lg mb-6">Sale up to 48% OFF</p>
+                    <a href="#" class="inline-block rounded-full bg-[#00B207] text-white px-7 py-3">Shop Now</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Value Propositions -->
+        <section class="border-b border-gray-200 py-6">
+            <div class="container mx-auto px-6 sm:px-12 flex flex-wrap items-center justify-between gap-6">
+                <div class="flex items-center gap-4">
+                    <span class="text-3xl">🚚</span>
+                    <div>
+                        <h3 class="font-semibold">Free Shipping</h3>
+                        <p class="text-sm text-gray-500">Free shipping on all your order</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-4">
+                    <span class="text-3xl">🎧</span>
+                    <div>
+                        <h3 class="font-semibold">Customer Support 24/7</h3>
+                        <p class="text-sm text-gray-500">Instant access to Support</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-4">
+                    <span class="text-3xl">🔒</span>
+                    <div>
+                        <h3 class="font-semibold">100% Secure Payment</h3>
+                        <p class="text-sm text-gray-500">We ensure your money is safe</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-4">
+                    <span class="text-3xl">💰</span>
+                    <div>
+                        <h3 class="font-semibold">Money-Back Guarantee</h3>
+                        <p class="text-sm text-gray-500">30 Days Money-Back Guarantee</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Top Category -->
+        <section class="container mx-auto px-6 sm:px-12 py-10">
+            <h3 class="text-4xl font-bold text-center mb-10">Top Category</h3>
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-5">
+                <div class="border border-gray-300 rounded-xl p-6 text-center hover:border-green-500 hover:shadow-md transition">
+                    <img src="https://images.unsplash.com/photo-1594282486552-05b4d80fbb9f?auto=format&fit=crop&w=200&q=80" alt="Vegetables" class="w-20 h-20 object-cover rounded-full mx-auto mb-4">
+                    <h4 class="font-semibold">Vegetables</h4>
+                    <p class="text-xs text-gray-500">165 Products</p>
+                </div>
+                <div class="border border-gray-300 rounded-xl p-6 text-center hover:border-green-500 hover:shadow-md transition">
+                    <img src="https://images.unsplash.com/photo-1619546813926-a78fa6372cd2?auto=format&fit=crop&w=200&q=80" alt="Fresh Fruit" class="w-20 h-20 object-cover rounded-full mx-auto mb-4">
+                    <h4 class="font-semibold">Fresh Fruit</h4>
+                    <p class="text-xs text-gray-500">137 Products</p>
+                </div>
+                <div class="border border-gray-300 rounded-xl p-6 text-center hover:border-green-500 hover:shadow-md transition">
+                    <img src="https://images.unsplash.com/photo-1622206151226-18ca2c9ab4a1?auto=format&fit=crop&w=200&q=80" alt="Fish and Meat" class="w-20 h-20 object-cover rounded-full mx-auto mb-4">
+                    <h4 class="font-semibold">Fish & Meat</h4>
+                    <p class="text-xs text-gray-500">34 Products</p>
+                </div>
+                <div class="border border-gray-300 rounded-xl p-6 text-center hover:border-green-500 hover:shadow-md transition">
+                    <img src="https://images.unsplash.com/photo-1528825871115-3581a5387919?auto=format&fit=crop&w=200&q=80" alt="Soft Drinks" class="w-20 h-20 object-cover rounded-full mx-auto mb-4">
+                    <h4 class="font-semibold">Soft Drinks</h4>
+                    <p class="text-xs text-gray-500">48 Products</p>
+                </div>
+                <div class="border border-gray-300 rounded-xl p-6 text-center hover:border-green-500 hover:shadow-md transition">
+                    <img src="https://images.unsplash.com/photo-1543083477-4f785aeafaa9?auto=format&fit=crop&w=200&q=80" alt="Bakery Food" class="w-20 h-20 object-cover rounded-full mx-auto mb-4">
+                    <h4 class="font-semibold">Bakery Food</h4>
+                    <p class="text-xs text-gray-500">54 Products</p>
+                </div>
+                <div class="border border-gray-300 rounded-xl p-6 text-center hover:border-green-500 hover:shadow-md transition">
+                    <img src="https://images.unsplash.com/photo-1594282486552-05b4d80fbb9f?auto=format&fit=crop&w=200&q=80" alt="Herbs and Oil" class="w-20 h-20 object-cover rounded-full mx-auto mb-4">
+                    <h4 class="font-semibold">Herbs & Oil</h4>
+                    <p class="text-xs text-gray-500">75 Products</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6: Featured Products -->
+        <section class="container mx-auto px-6 sm:px-12 py-10">
+            <h3 class="text-4xl font-bold text-center mb-10">Featured Products</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="border border-gray-300 rounded-xl p-4 hover:shadow-lg transition">
+                    <img src="https://images.unsplash.com/photo-1619546813926-a78fa6372cd2?auto=format&fit=crop&w=400&q=80" alt="Green Apple" class="w-full h-56 object-cover rounded-lg">
+                    <p class="mt-4 text-sm text-gray-600">Green Apple</p>
+                    <div class="flex items-center justify-between mt-2">
+                        <p class="font-semibold">$14.00 <span class="line-through text-gray-300 font-normal">$22.00</span></p>
+                        <button class="w-9 h-9 rounded-full bg-gray-200 hover:bg-[#00B207] transition flex items-center justify-center">🛒</button>
+                    </div>
+                    <div class="flex gap-1 text-amber-400 text-xs mt-3">★★★★★</div>
+                </div>
+
+                <div class="border border-gray-300 rounded-xl p-4 hover:shadow-lg transition">
+                    <img src="https://images.unsplash.com/photo-1594282486552-05b4d80fbb9f?auto=format&fit=crop&w=400&q=80" alt="Fresh Cabbage" class="w-full h-56 object-cover rounded-lg">
+                    <p class="mt-4 text-sm text-gray-600">Fresh Cabbage</p>
+                    <div class="flex items-center justify-between mt-2">
+                        <p class="font-semibold">$12.00 <span class="line-through text-gray-300 font-normal">$18.00</span></p>
+                        <button class="w-9 h-9 rounded-full bg-gray-200 hover:bg-[#00B207] transition flex items-center justify-center">🛒</button>
+                    </div>
+                    <div class="flex gap-1 text-amber-400 text-xs mt-3">★★★★★</div>
+                </div>
+
+                <div class="border border-gray-300 rounded-xl p-4 hover:shadow-lg transition">
+                    <img src="https://images.unsplash.com/photo-1622206151226-18ca2c9ab4a1?auto=format&fit=crop&w=400&q=80" alt="Green Lettuce" class="w-full h-56 object-cover rounded-lg">
+                    <p class="mt-4 text-sm text-gray-600">Green Lettuce</p>
+                    <div class="flex items-center justify-between mt-2">
+                        <p class="font-semibold">$10.00 <span class="line-through text-gray-300 font-normal">$15.00</span></p>
+                        <button class="w-9 h-9 rounded-full bg-gray-200 hover:bg-[#00B207] transition flex items-center justify-center">🛒</button>
+                    </div>
+                    <div class="flex gap-1 text-amber-400 text-xs mt-3">★★★★★</div>
+                </div>
+
+                <div class="border border-gray-300 rounded-xl p-4 hover:shadow-lg transition">
+                    <img src="https://images.unsplash.com/photo-1528825871115-3581a5387919?auto=format&fit=crop&w=400&q=80" alt="Fresh Banana" class="w-full h-56 object-cover rounded-lg">
+                    <p class="mt-4 text-sm text-gray-600">Fresh Banana</p>
+                    <div class="flex items-center justify-between mt-2">
+                        <p class="font-semibold">$18.00 <span class="line-through text-gray-300 font-normal">$24.00</span></p>
+                        <button class="w-9 h-9 rounded-full bg-gray-200 hover:bg-[#00B207] transition flex items-center justify-center">🛒</button>
+                    </div>
+                    <div class="flex gap-1 text-amber-400 text-xs mt-3">★★★★★</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 7: Trusted Store -->
+        <section class="container mx-auto px-6 sm:px-12 py-12 flex flex-col lg:flex-row items-center gap-10">
+            <div class="flex-1">
+                <img src="https://images.unsplash.com/photo-1543083477-4f785aeafaa9?auto=format&fit=crop&w=800&q=80" alt="Trusted Organic Food" class="w-full rounded-xl">
+            </div>
+
+            <div class="flex-1">
+                <h3 class="text-4xl font-bold mb-6">100% Trusted Organic Food Store</h3>
+                <div class="space-y-5">
+                    <div class="flex gap-3">
+                        <div class="w-3.5 h-3.5 rounded-full bg-[#00B207] shrink-0 mt-1.5"></div>
+                        <div>
+                            <h4 class="font-semibold">Healthy & natural food for lovers of healthy food.</h4>
+                            <p class="text-sm text-gray-500 mt-1">Our products come from trusted sources and are selected with care.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-3">
+                        <div class="w-3.5 h-3.5 rounded-full bg-[#00B207] shrink-0 mt-1.5"></div>
+                        <div>
+                            <h4 class="font-semibold">Every day fresh and quality products for you.</h4>
+                            <p class="text-sm text-gray-500 mt-1">Choose your favorite food and enjoy a simple shopping experience.</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="inline-block mt-7 rounded-full bg-[#00B207] text-white px-7 py-3">Shop Now</a>
+            </div>
+        </section>
+
+        <!-- Section 8: Team Members -->
+        <section class="container mx-auto px-6 sm:px-12 py-12">
+            <h3 class="text-4xl font-bold text-center mb-10">Our Team Member</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=350&q=80" alt="Team Member" class="w-24 h-24 rounded-full mx-auto object-cover">
+                    <h4 class="text-base font-semibold mt-4">Jenny Wilson</h4>
+                    <p class="text-xs text-gray-500">CEO & Founder</p>
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=350&q=80" alt="Team Member" class="w-24 h-24 rounded-full mx-auto object-cover">
+                    <h4 class="text-base font-semibold mt-4">Mr. John Khan</h4>
+                    <p class="text-xs text-gray-500">Senior Farmer</p>
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=350&q=80" alt="Team Member" class="w-24 h-24 rounded-full mx-auto object-cover">
+                    <h4 class="text-base font-semibold mt-4">Jane Cooper</h4>
+                    <p class="text-xs text-gray-500">Marketing Manager</p>
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=350&q=80" alt="Team Member" class="w-24 h-24 rounded-full mx-auto object-cover">
+                    <h4 class="text-base font-semibold mt-4">Robert Fox</h4>
+                    <p class="text-xs text-gray-500">Quality Controller</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 9: Partner Logos -->
+        <section class="bg-gray-50/50 py-10">
+            <div class="container mx-auto px-6 sm:px-12 flex flex-wrap items-center justify-between gap-8 opacity-60 grayscale hover:grayscale-0 transition">
+                <img src="https://placehold.co/140x50?text=Company+1" alt="Company 1" class="h-10 object-contain">
+                <img src="https://placehold.co/140x50?text=Company+2" alt="Company 2" class="h-10 object-contain">
+                <img src="https://placehold.co/140x50?text=Company+3" alt="Company 3" class="h-10 object-contain">
+                <img src="https://placehold.co/140x50?text=Company+4" alt="Company 4" class="h-10 object-contain">
+                <img src="https://placehold.co/140x50?text=Company+5" alt="Company 5" class="h-10 object-contain">
+            </div>
+        </section>
+    </main>
+
+    <!-- Section 10: Footer -->
+    <footer class="bg-gray-100 py-16">
+        <div class="container mx-auto px-6 sm:px-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10">
+            <div>
+                <div class="flex items-center gap-2 mb-4">
+                    <span class="text-3xl">🌱</span>
+                    <h3 class="text-2xl font-semibold">Ecobazar</h3>
+                </div>
+                <p class="text-sm text-gray-500 mb-4">Fresh and healthy food for your everyday life.</p>
+                <p class="font-semibold">01700-000000</p>
+            </div>
+
+            <div>
+                <h4 class="font-semibold mb-4">My Account</h4>
+                <div class="flex flex-col gap-2.5 text-sm text-gray-500">
+                    <a href="#">My Account</a>
+                    <a href="#">Order History</a>
+                    <a href="#">Shopping Cart</a>
+                    <a href="#">Wishlist</a>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="font-semibold mb-4">Helps</h4>
+                <div class="flex flex-col gap-2.5 text-sm text-gray-500">
+                    <a href="#">Contact</a>
+                    <a href="#">FAQs</a>
+                    <a href="#">Terms</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="font-semibold mb-4">Proxy</h4>
+                <div class="flex flex-col gap-2.5 text-sm text-gray-500">
+                    <a href="#">About</a>
+                    <a href="#">Shop</a>
+                    <a href="#">Product</a>
+                    <a href="#">Track Order</a>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="font-semibold mb-4">Download Apps</h4>
+                <div class="space-y-3">
+                    <img src="https://placehold.co/150x45?text=App+Store" alt="App Store" class="h-11 object-contain">
+                    <img src="https://placehold.co/150x45?text=Google+Play" alt="Google Play" class="h-11 object-contain">
+                </div>
+            </div>
+        </div>
+
+        <div class="container mx-auto px-6 sm:px-12 mt-12 pt-6 border-t border-gray-300 flex flex-col sm:flex-row gap-4 justify-between text-sm text-gray-500">
+            <p>Ecobazar eCommerce © 2026. All Rights Reserved.</p>
+            <p>VISA · MasterCard · bKash</p>
+        </div>
+    </footer>
+
+</body>
+</html>
